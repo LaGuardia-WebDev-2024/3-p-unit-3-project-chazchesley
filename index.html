@@ -1,12 +1,12 @@
 <!--
 Requirements
-[  ] Two External Links
-[  ] Table
-[  ] Three CSS Rules
-[  ] Three Images
+[ yes ] Two External Links
+[ yes ] Table
+[ yes ] Three CSS Rules
+[ YES ] Three Images
 
 Select ONE Additional Feature to Add  
-[ no ] Feature 1 - Include a :hover feature
+[ yes ] Feature 1 - Include a :hover feature
 [ no ] Feature 2 - Include at least two Internal links
 [ no ] Feature 3 - Include a list in a tabl
 [ no ] Feature 4 - Include at least two background images in a table
@@ -15,44 +15,170 @@ Select ONE Additional Feature to Add
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kablammo&display=swap"
+      rel="stylesheet"
+    />
     <title>Project: Recipe book</title>
     <meta charset="utf-8" />
-    <style></style>
+    <style>
+      h1 {
+        background-color: #86a3c3;
+        font-size: 60px;
+      }
+      h1:hover {
+        color: #b4ced1;
+      }
+      .col1 {
+        background-color: #7268a6;
+      }
+      .col1:hover {
+        background-color: #c9c6f7;
+      }
+      .col {
+        background-color: #6b3074;
+      }
+      .col:hover {
+        background-color: #ac6bbf;
+      }
+      .col2 {
+        background-color: #86a3c3;
+      }
+      .col2:hover {
+        background-color: #95c0e6;
+      }
+      .col3 {
+        background-color: #b6cec7;
+      }
+      .col3:hover {
+        background-color: #cdf7dc;
+      }
+      body {
+        background-image: url(https://chicshelfpaper.com/wp-content/uploads/2019/05/9130.jpg);
+        font-family: "Bebas Neue", sans-serif;
+        text-align: center;
+        font-size: 28px;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid;
+      }
+    </style>
   </head>
 
   <body>
-    <h1>Chaz's Christmas Wishlist</h1>
+    <h1><center>My Top 4 Movies</center></h1>
     <table>
       <thead>
         <tr>
-          <th>Item</th>
-          <th>Name</th>
-          <th>Why I want it</th>
+          <th class="col">Poster</th>
+          <th class="col1">Title</th>
+          <th class="col2">Director</th>
+          <th class="col3">Description</th>
         </tr>
       </thead>
       <tbody>
-        <td>
-          <img
-            src="data:image/jpeg;base64,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"
-            width="200"
-            alt="Pretty Grunge palette"
-          />
-        </td>
-        <td>
-          <a
-            href="https://hudabeauty.com/us/en_US/huda-beauty/pretty-grunge-eyeshadow-palette-HB01058.html"
-          >
-            <center>
-              Huda Beauty<br />
-              "Pretty Grunge" palette
-            </center></a
-          >
-        </td>
-        <td>I'd be able to get rid of my other makeup and save space</td>
+        <tr>
+          <td class="col">
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BMmY1M2M5ZmMtYzllZC00YzAxLTk4MjktZDJkNjA1MTUwMGQ4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+              width="300"
+              alt="Lock Stock and Two Smoking Barrels"
+            />
+          </td>
+          <td class="col1"><em>Lock, Stock and Two Smoking Barrels</em></td>
+          <td class="col2">
+            <a href="https://www.imdb.com/name/nm0005363/">Guy Ritchie</a>
+          </td>
+          <td class="col3">
+            Eddy (Nick Moran) convinces three friends to pool funds for a
+            high-stakes poker game against local crime boss Hatchet Harry (P.H.
+            Moriarty). Harry cheats and Eddy loses, giving him a week to pay
+            back 500,000 pounds or hand over his father's pub. Desperate, Eddy
+            and his friends wait for their neighbors to rob some drug dealers,
+            then rob the robbers in turn. After both thefts, the number of
+            interested criminal parties increases, with the four friends in
+            dangerously over their heads.
+          </td>
+        </tr>
       </tbody>
       <tbody>
-      <td> 
-        </td>
+        <tr>
+          <td class="col">
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BYzI2ZmU3MWMtZmRlMi00ZmVlLTkwMDMtZmI1YTg4YzcwMDE0XkEyXkFqcGc@._V1_.jpg"
+              width="300"
+              alt="Talented Mr. Ripley"
+            />
+          </td>
+          <td class="col1"><em>The Talented Mr. Ripley</em></td>
+          <td class="col2">
+            <a href="https://www.imdb.com/name/nm0005237/">Anthony Minghella</a>
+          </td>
+          <td class="col3">
+            To be young and carefree amid the blue waters and idyllic landscape
+            of sun-drenched Italy in the late 1950s; that's la dolce vita Tom
+            Ripley (Matt Damon) craves- and Dickie Greenleaf (Jude Law) leads.
+            When Dickie's father asks Tom to bring his errant playboy son back
+            home to America, Dickie and his beautiful expatriate girlfriend,
+            Marge Sherwood (Gwyneth Paltrow), never suspect the dangerous
+            extremes to which Ripley will go to make their lifestyle his own.
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td class="col">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/0/0d/Paris-is-burning-movie-poster-md.jpg"
+              width="300"
+              alt="Paris is Burning"
+            />
+          </td>
+          <td class="col1"><em>Paris is Burning</em></td>
+          <td class="col2">
+            <a href="https://www.imdb.com/name/nm0515255/">Jennie Livingston</a>
+          </td>
+          <td class="col3">
+            This documentary focuses on drag queens living in New York City and
+            their "house" culture, which provides a sense of community and
+            support for the flamboyant and often socially shunned performers.
+            Groups from each house compete in elaborate balls that take cues
+            from the world of fashion. Also touching on issues of racism and
+            poverty, the film features interviews with a number of renowned drag
+            queens, including Willi Ninja, Pepper LaBeija and Dorian Corey.
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td class="col">
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BZGRmMGRhOWMtOTk3Ni00OTRjLTkyYTAtYzA1M2IzMGE3NGRkXkEyXkFqcGc@._V1_.jpg"
+              width="300"
+              alt="Scary Movie"
+            />
+          </td>
+          <td class="col1"><em>Scary Movie</em></td>
+          <td class="col2">
+            <a href="https://www.imdb.com/name/nm0005540/"
+              >Keenen Ivory Wayans</a
+            >
+          </td>
+          <td class="col3">
+            Defying the very notion of good taste, Scary Movie out-parodies the
+            pop culture parodies with a no-holds barred assault on the most
+            popular images and talked-about moments from recent films,
+            television and commercials. The film boldly fires barbs at the
+            classic scenes from "Scream," "The Sixth Sense," "The Matrix," "I
+            Know What You Did Last Summer" and "The Blair Witch Project," then
+            goes on to mock a whole myriad of teen movie clichés, no matter the
+            genre.
+          </td>
+        </tr>
       </tbody>
     </table>
   </body>
