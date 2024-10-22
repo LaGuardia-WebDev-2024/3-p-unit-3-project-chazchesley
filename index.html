@@ -1,12 +1,12 @@
 <!--
 Requirements
-[  ] Two External Links
-[  ] Table
-[  ] Three CSS Rules
-[  ] Three Images
+[ yes ] Two External Links
+[ yes ] Table
+[ yes ] Three CSS Rules
+[ YES ] Three Images
 
 Select ONE Additional Feature to Add  
-[ no ] Feature 1 - Include a :hover feature
+[ yes ] Feature 1 - Include a :hover feature
 [ no ] Feature 2 - Include at least two Internal links
 [ no ] Feature 3 - Include a list in a tabl
 [ no ] Feature 4 - Include at least two background images in a table
@@ -14,47 +14,172 @@ Select ONE Additional Feature to Add
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kablammo&display=swap"
+      rel="stylesheet"
+    />
+    <title>Project: Recipe book</title>
+    <meta charset="utf-8" />
+    <style>
+      h1 {
+        background-color: #86a3c3;
+        font-size: 60px;
+      }
+      h1:hover {
+        color: #b4ced1;
+      }
+      .col1 {
+        background-color: #7268a6;
+      }
+      .col1:hover {
+        background-color: #c9c6f7;
+      }
+      .col {
+        background-color: #6b3074;
+      }
+      .col:hover {
+        background-color: #ac6bbf;
+      }
+      .col2 {
+        background-color: #86a3c3;
+      }
+      .col2:hover {
+        background-color: #95c0e6;
+      }
+      .col3 {
+        background-color: #b6cec7;
+      }
+      .col3:hover {
+        background-color: #cdf7dc;
+      }
+      body {
+        background-image: url(https://chicshelfpaper.com/wp-content/uploads/2019/05/9130.jpg);
+        font-family: "Bebas Neue", sans-serif;
+        text-align: center;
+        font-size: 28px;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid;
+      }
+    </style>
+  </head>
 
-<head>
-  <title>Project: Recipe book</title>
-  <meta charset="utf-8">
-  <style>
-  </style>
-</head>
-
-<body>
-
-  <h1>____'s Recipe Book</h1>
-
-  <h2>Contents:</h2>
-
-  <ol>
-    <li><a href="?">Recipe #1</a></li>
-  </ol>
-
-  <h2 id="?">Recipe #1</h2>
-
-  <ul>
-    <li>Time: _</li>
-    <li>Serves: _</li>
-  </ul>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Ingredients</th>
-        <th>Quantity</th>
-      </tr>
-    </thead>
-    <tbody>
-    </tbody>
-  </table>
-
-  <p><strong>Step 1:</strong> Do something.
-  </p>
-
-  <p><em>Source: <a href="?">Some recipes websites</a></em></p>
-
-</body>
-
+  <body>
+    <h1><center>My Top 4 Movies</center></h1>
+    <table>
+      <thead>
+        <tr>
+          <th class="col">Poster</th>
+          <th class="col1">Title</th>
+          <th class="col2">Director</th>
+          <th class="col3">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col">
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BMmY1M2M5ZmMtYzllZC00YzAxLTk4MjktZDJkNjA1MTUwMGQ4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+              width="300"
+              alt="Lock Stock and Two Smoking Barrels"
+            />
+          </td>
+          <td class="col1"><em>Lock, Stock and Two Smoking Barrels</em></td>
+          <td class="col2">
+            <a href="https://www.imdb.com/name/nm0005363/">Guy Ritchie</a>
+          </td>
+          <td class="col3">
+            Eddy (Nick Moran) convinces three friends to pool funds for a
+            high-stakes poker game against local crime boss Hatchet Harry (P.H.
+            Moriarty). Harry cheats and Eddy loses, giving him a week to pay
+            back 500,000 pounds or hand over his father's pub. Desperate, Eddy
+            and his friends wait for their neighbors to rob some drug dealers,
+            then rob the robbers in turn. After both thefts, the number of
+            interested criminal parties increases, with the four friends in
+            dangerously over their heads.
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td class="col">
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BYzI2ZmU3MWMtZmRlMi00ZmVlLTkwMDMtZmI1YTg4YzcwMDE0XkEyXkFqcGc@._V1_.jpg"
+              width="300"
+              alt="Talented Mr. Ripley"
+            />
+          </td>
+          <td class="col1"><em>The Talented Mr. Ripley</em></td>
+          <td class="col2">
+            <a href="https://www.imdb.com/name/nm0005237/">Anthony Minghella</a>
+          </td>
+          <td class="col3">
+            To be young and carefree amid the blue waters and idyllic landscape
+            of sun-drenched Italy in the late 1950s; that's la dolce vita Tom
+            Ripley (Matt Damon) craves- and Dickie Greenleaf (Jude Law) leads.
+            When Dickie's father asks Tom to bring his errant playboy son back
+            home to America, Dickie and his beautiful expatriate girlfriend,
+            Marge Sherwood (Gwyneth Paltrow), never suspect the dangerous
+            extremes to which Ripley will go to make their lifestyle his own.
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td class="col">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/0/0d/Paris-is-burning-movie-poster-md.jpg"
+              width="300"
+              alt="Paris is Burning"
+            />
+          </td>
+          <td class="col1"><em>Paris is Burning</em></td>
+          <td class="col2">
+            <a href="https://www.imdb.com/name/nm0515255/">Jennie Livingston</a>
+          </td>
+          <td class="col3">
+            This documentary focuses on drag queens living in New York City and
+            their "house" culture, which provides a sense of community and
+            support for the flamboyant and often socially shunned performers.
+            Groups from each house compete in elaborate balls that take cues
+            from the world of fashion. Also touching on issues of racism and
+            poverty, the film features interviews with a number of renowned drag
+            queens, including Willi Ninja, Pepper LaBeija and Dorian Corey.
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td class="col">
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BZGRmMGRhOWMtOTk3Ni00OTRjLTkyYTAtYzA1M2IzMGE3NGRkXkEyXkFqcGc@._V1_.jpg"
+              width="300"
+              alt="Scary Movie"
+            />
+          </td>
+          <td class="col1"><em>Scary Movie</em></td>
+          <td class="col2">
+            <a href="https://www.imdb.com/name/nm0005540/"
+              >Keenen Ivory Wayans</a
+            >
+          </td>
+          <td class="col3">
+            Defying the very notion of good taste, Scary Movie out-parodies the
+            pop culture parodies with a no-holds barred assault on the most
+            popular images and talked-about moments from recent films,
+            television and commercials. The film boldly fires barbs at the
+            classic scenes from "Scream," "The Sixth Sense," "The Matrix," "I
+            Know What You Did Last Summer" and "The Blair Witch Project," then
+            goes on to mock a whole myriad of teen movie clichés, no matter the
+            genre.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
